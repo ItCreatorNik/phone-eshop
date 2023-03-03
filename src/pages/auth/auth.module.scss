@@ -1,0 +1,110 @@
+.auth {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .img {
+    animation: slide-down 0.5s ease;
+  }
+
+  .form {
+    width: 35rem;
+    padding: 1.5rem;
+    animation: slide-up 0.5s ease;
+    h2 {
+      color: black;
+      text-align: center;
+    }
+    form {
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        display: block;
+        font-size: 16px;
+        font-weight: 300;
+        padding: 1rem;
+        margin: 1rem auto;
+        width: 100%;
+        border: 1px solid rgb(247, 243, 106);
+        border-radius: 3px;
+        outline: none;
+      }
+      .links {
+        display: flex;
+        justify-content: center;
+        margin-top: 5px;
+        a {
+          text-decoration: none;
+          transition: all 0.2s;
+          color: black;
+          font-size: 16px;
+          &:hover {
+            color: rgb(247, 243, 106);
+            font-size: 18px;
+          }
+        }
+      }
+
+      p {
+        text-align: center;
+        margin: 1rem;
+      }
+    }
+    .register {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      gap: 5px;
+      a {
+        text-decoration: none;
+        transition: all 0.2s;
+        color: black;
+        font-size: 16px;
+        &:hover {
+          color: rgb(247, 243, 106);
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .btn {
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    padding: 6px 8px;
+    border: 1px solid rgb(247, 243, 106);
+    border-radius: 3px;
+    cursor: pointer;
+    align-items: center;
+    transition: all 0.3s;
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
+  @keyframes slide-up {
+    0% {
+      transform: translateY(-5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  @keyframes slide-down {
+    0% {
+      transform: translateY(5rem);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .img {
+    display: none;
+  }
+}

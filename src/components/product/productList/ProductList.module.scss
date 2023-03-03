@@ -1,0 +1,27 @@
+.product__title {
+  text-align: center;
+  padding-top: 15px;
+  color: var(--yellow-color);
+}
+
+.product__sort {
+  display: flex;
+  justify-content: center;
+  display: flex;
+  gap: 10px;
+  padding: 15px 0;
+
+  select {
+    text-align: center;
+    border: none;
+    outline: none;
+  }
+}
+
+.product__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+  padding-bottom: 120px;
+}

@@ -1,0 +1,92 @@
+.cart__link {
+  a {
+    text-decoration: none;
+    transition: all 0.2s;
+    color: black;
+    font-size: 16px;
+    &:hover {
+      color: rgb(247, 243, 106);
+      font-size: 18px;
+    }
+  }
+}
+
+.table {
+  padding: 5px;
+  padding-bottom: 90px;
+  width: 100%;
+  overflow-x: auto;
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 1.4rem;
+
+    thead {
+      border-top: 2px solid #d1ce22cd;
+      border-bottom: 2px solid #d1ce22cd;
+    }
+
+    th {
+      border: 1px solid #d1ce22cd;
+    }
+
+    th,
+    td {
+      vertical-align: top;
+      text-align: left;
+      padding: 8px;
+      &.icons {
+        > * {
+          margin-right: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    tr {
+      border-bottom: 1px solid #d1ce22cd;
+    }
+
+    tr:nth-child(even) {
+      background-color: rgb(174, 174, 174);
+    }
+  }
+}
+.count {
+  display: flex;
+  align-items: center;
+  button {
+    border: 1px solid var(--darkblue);
+  }
+  & > * {
+    margin-right: 1rem;
+  }
+}
+
+.btn {
+  padding: 10px;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  line-height: 19px;
+  display: block;
+  align-items: flex-end;
+  cursor: pointer;
+  transition: opacity 200ms ease-in-out, background 200ms ease-in-out;
+}
+.btn_add {
+  background: #d3fed0;
+  &:hover {
+    background: #5aef43;
+  }
+}
+
+.btn_delete {
+  background: #fdc2c1;
+  &:hover {
+    background: #ee3333;
+  }
+}
